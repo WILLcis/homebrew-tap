@@ -5,21 +5,21 @@
 class Deepdog < Formula
   desc "deepdog CLI — local agent runtime and management tool for the deepdog platform"
   homepage "https://github.com/WILLcis/deepdog"
-  version "0.3.137"
+  version "0.3.138"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.137/deepdog-bios-cli-0.3.137-darwin-amd64.tar.gz"
-      sha256 "095e4b1c8aee2f585f143bcf98231d415d8f3b97d311d784a480983d10385622"
+      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.138/deepdog-bios-cli-0.3.138-darwin-amd64.tar.gz"
+      sha256 "bc8741926a31fbb21702fcb342f1f901c2438b30240831e02f5e1be0a19348ef"
 
       define_method(:install) do
         bin.install "deepdog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.137/deepdog-bios-cli-0.3.137-darwin-arm64.tar.gz"
-      sha256 "1758e4deabefc9ab355be7f502fd9d778a34193a64044f8bf7ca8249198dd702"
+      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.138/deepdog-bios-cli-0.3.138-darwin-arm64.tar.gz"
+      sha256 "7967a9e1420552baaef6ae589ca0ad958ed851931135eec5f155686a4589da20"
 
       define_method(:install) do
         bin.install "deepdog"
@@ -29,15 +29,15 @@ class Deepdog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.137/deepdog-bios-cli-0.3.137-linux-amd64.tar.gz"
-      sha256 "091a508b6f4f44e4100a997e043c5b4d3190f43878571f8186d3db9aac864572"
+      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.138/deepdog-bios-cli-0.3.138-linux-amd64.tar.gz"
+      sha256 "1219b48190718594eceb8dbf825f001277f81753885cc120d631c5ef7a9b04a6"
       define_method(:install) do
         bin.install "deepdog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.137/deepdog-bios-cli-0.3.137-linux-arm64.tar.gz"
-      sha256 "353e20c9f7b2f8c85e851c9ca2666ddec220717171aca565c5f11c267b0400b4"
+      url "https://github.com/WILLcis/deepdog-BIOS/releases/download/v0.3.138/deepdog-bios-cli-0.3.138-linux-arm64.tar.gz"
+      sha256 "4ba4335c7cbb3716ddde0db53f4b0e06d44a6ff4fa4bbef2d554644ea8333ed7"
       define_method(:install) do
         bin.install "deepdog"
       end
